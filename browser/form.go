@@ -15,6 +15,7 @@ import (
 type Submittable interface {
 	Method() string
 	Action() string
+	Fields() url.Values
 	Input(name, value string) error
 	Set(name, value string) error
 
@@ -111,6 +112,10 @@ func (f *Form) Method() string {
 // The URL will always be absolute.
 func (f *Form) Action() string {
 	return f.action
+}
+
+func (f *Form) Fields() url.Values {
+	return f.fields
 }
 
 // Input sets the value of a form field.
