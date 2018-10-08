@@ -2,9 +2,9 @@
 package surf
 
 import (
-	"github.com/headzoo/surf/agent"
-	"github.com/headzoo/surf/browser"
-	"github.com/headzoo/surf/jar"
+	"github.com/kenyonduan/surf/agent"
+	"github.com/kenyonduan/surf/browser"
+	"github.com/kenyonduan/surf/jar"
 )
 
 var (
